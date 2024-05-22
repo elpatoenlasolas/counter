@@ -12,8 +12,12 @@ function ItemCounter() {
       setCounter(counter - 1);
     }
   }
-  const handleMultiply = () => {
-    setCounter(101 * Math.floor(Math.random(2 * 10) * 10) / 10);
+  const handleRandom = () => {
+    setCounter(Math.floor(Math.random() * 100) + 10);
+  }
+
+  const handleReset = () => {
+    setCounter(0);
   }
 
   return (
@@ -24,7 +28,8 @@ function ItemCounter() {
             <div className="buttons">
                 <button className='remove' onClick={handleRemove}>Remove</button>
                 <button className='add' onClick={handleAdd}>Add</button>
-                <button className='multiply' onClick={handleMultiply}>Random</button>
+                <button className='random' onClick={handleRandom}>Random</button>
+                <button className='reset' onClick={handleReset}>Reset</button>
             </div>
         </div>
     </div>

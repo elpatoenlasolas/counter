@@ -13,9 +13,9 @@
     align-items: center;
     height: 350px;
     width: 350px;
-    border: 1px solid lightgrey;
+    border: 3px solid rgb(70, 70, 70);
     border-radius: 25px;
-    box-shadow: 1px 1px 5px rgba(211, 211, 211, 0.497);
+    box-shadow: 1px 1px 5px rgba(86, 86, 86, 0.497);
     padding-bottom: 25px;
   }
   
@@ -55,4 +55,13 @@
   .remove:hover {
     background-color: lightcoral;
     color: rgb(68, 68, 68);
+  }
+
+  .random:hover {
+    background-color: lightblue;
+  }
+
+  .reset:hover {
+    background-color: lightslategray;
+    color: white;
   }
