@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './itemCounter.css';
+import { Button } from 'antd';
+
 
 function ItemCounter() {
   const [counter, setCounter] = useState(0);
@@ -21,20 +23,21 @@ function ItemCounter() {
   }
 
   return (
-  <>
+            
     <div id="wrapper">
         <div className='counterWrap'>
             <h1 id="count">{counter}</h1>
+              
             <div className="buttons">
-                <button className='remove' onClick={handleRemove}>Remove</button>
-                <button className='add' onClick={handleAdd}>Add</button>
-                <button className='random' onClick={handleRandom}>Random</button>
-                <button className='reset' onClick={handleReset}>Reset</button>
+                <Button type="primary" danger onClick={handleRemove}>Remove</Button>
+                <Button type="primary" onClick={handleAdd}>Add</Button>
+                <Button type="dashed" onClick={handleRandom}>Random</Button>
+                <Button type="text" onClick={handleReset}>Reset</Button>
             </div>
+
         </div>
     </div>
-  </>
-  );
+  )
 }
 
 export default ItemCounter;
