@@ -29,10 +29,10 @@ function ItemCounter() {
             <h1 id="count">{counter}</h1>
               
             <div className="buttons">
-                <Button type="primary" danger onClick={handleRemove}>Remove</Button>
-                <Button type="primary" onClick={handleAdd}>Add</Button>
-                <Button type="dashed" onClick={handleRandom}>Random</Button>
-                <Button type="text" onClick={handleReset}>Reset</Button>
+                <Button color="danger" variant="solid" onClick={handleRemove}>Remove</Button>
+                <Button color="primary" variant="solid" onClick={handleAdd}>Add</Button>
+                <Button color="default" variant="outlined" onClick={handleRandom}>Random</Button>
+                <Button color="default" variant="solid" onClick={handleReset}>Reset</Button>
             </div>
 
         </div>
